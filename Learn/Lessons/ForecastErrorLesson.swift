@@ -286,7 +286,6 @@ private class ForecastErrorCalculator {
                     let residual = target.quantity.doubleValue(for: unit) - value.quantity.doubleValue(for: unit) 
                     residuals.append(GlucoseEffect(startDate: value.startDate, quantity: HKQuantity(unit: unit, doubleValue: residual)))
                 }
-                //print("residuals: \(residuals)")
             }
             
             if residuals.count > 0 {
